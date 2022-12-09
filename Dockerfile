@@ -6,6 +6,6 @@ RUN mvn install
 FROM openjdk:11.0
 WORKDIR /app
 COPY --from=build /app/target/devops-integration.jar /app/ 
-EXPOSE 8081
+EXPOSE 8082
 CMD ["java","jar","devops-integration.jar"]
 
