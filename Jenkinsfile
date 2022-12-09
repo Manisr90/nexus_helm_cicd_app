@@ -45,7 +45,7 @@ pipeline{
                 script{
                 
                        sh 'docker build -t testapp .'
-                       sh 'docker run -itd -p 9090:8080 testapp'
+                       sh 'docker run -d -p 8081:8080 testapp'
                 
                 }
              
