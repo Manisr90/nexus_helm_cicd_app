@@ -44,6 +44,7 @@ pipeline{
              
                 script{
                 
+                       sh 'docker build -t testapp .'
                 
                 }
              
